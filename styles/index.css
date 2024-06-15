@@ -81,8 +81,8 @@ body {
   width: 100%;
   background-image: url('../img/betty.png');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: center 0;
+  background-size: 100% auto;
   background-color: #fff;
   transition: all .5s ease-in-out;
 }
@@ -93,6 +93,39 @@ body {
     }
 }
 
+
+.banner {
+    position: relative;
+    text-align: center;
+    align-content: center;
+}
+
+.banner__main {
+    width: 400px;
+    height: 250px;
+    margin-top: 80px;
+    border: var(--border-width) var(--border-style) var(--border-color);
+    background-color: #62ffd5;
+    cursor: url('../img/icon-brush.png'), auto;
+    transition: all .5s ease-in-out;
+}
+
+.sticker {
+    position: absolute;
+    top: 0;
+    left: 8%;
+    width: 300px;
+    transform: translateY(-30%);
+    z-index: 11;
+    background-image: url('../img/icon-me.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px auto;
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    border: var(--border-width) var(--border-style) var(--border-color);
+}
 
 .leftSidebar__listItem {
   --padding: 15px;
@@ -140,22 +173,6 @@ body {
     transform: translateY(0);
 }
 
-.banner {
-    text-align: center;
-    align-content: center;
-}
-
-.banner__main {
-    width: 400px;
-    height: 250px;
-    border-radius: 50%;
-    border: var(--border-width) var(--border-style) var(--border-color);
-    background-color: #62ffd5;
-    cursor: url('../img/icon-brush.png'), auto;
-    transition:all .5s ease-in-out;
-}
-
-
 .menu__title, .leftSidebar__listItem--title::before {
     transition: all calc(0.5s / var(--speed)) linear;
 }
@@ -178,6 +195,7 @@ body {
 }
 
 .rightSidebar__foot {
+  font-family: 'FontsFree-Net-Dream-Avenue';
   height: 15%;
   background-color: #fff;
   font-size: 2.5rem;
@@ -251,23 +269,24 @@ body {
 }
 .graph__container {
     position: relative;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    height: 120px;
     width: 300px;
     max-width: 100%;
 }
-.graph__container::after {
+.graph__content {
     position: absolute;
+    display: block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);
-    content: url('../img/emoticon-happiness.png');
+    width: 60%;
+    height: auto;
+    transform: translate(-50%, -50%);
 }
 .graph__path {
     position: absolute;
-    top:  0;
+    top: 0;
     border: var(--border-width) var(--border-style) var(--border-color);
-    padding: 30px;
+    height: 90px;
     width: 100%;
 }
 .graph__path + .graph__path {
@@ -284,6 +303,21 @@ body {
     position: relative;
     display: flex;
     gap: 25px;
+    align-items: flex-end;
+}
+
+.submenu__content--wrapper {
+    display: flex;
+    column-gap: 8px;
+    align-items: flex-end;
+}
+
+.submenu__content--main {
+    font-size: 1em;
+}
+
+.submenu__content--suffix {
+    font-size: 0.75em;
 }
 
 .submenu__item {
@@ -295,6 +329,7 @@ body {
     content: var(--prefix);
     display: block;
     font-family: var(--font-pre);
+    font-size: 0.75em;
 }
 
 .submenu__content::after {
@@ -315,36 +350,47 @@ body {
 }
 
 .personality {
-    padding: 20px;
+    padding: .3em;
     background-color: #fff;
     border: var(--border-width) var(--border-style) var(--border-color);
     position: absolute;
     top: 300px;
     left: 40%;
+    line-height: 1.25em;
     font-size: 3rem;
+    font-family:  'VigranMaroll-2OzWK';
     transform: translateX(-50%);
 }
 
 .portrait {
-    padding: 25px;
+    position: relative;
+    --padding: 25px;
+    padding: var(--padding);
     padding-bottom: 0;
     margin-top: 60px;
+}
+
+.portrait__img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .portrait__head {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     height: 50%;
 }
 
-.portrait__toolbar {
-    margin-left: -25px;
+.portrait__tabs {
+    margin-left: calc(var(--padding) * -1);
     padding-top: 30px;
     display: flex;
     height: max-content;
 }
 
-.portrait__tool {
+.portrait__tab {
     font-size: 0.75rem;
     display: flex;
     align-items: center;
@@ -356,29 +402,39 @@ body {
     border-left: 0;
 }
 
-.portrait__tool::before {
+.portrait__tab::before {
     content: ' \2716';
     display: block;
 }
 
-.portrait__tool:hover {
+.portrait__tab--active,
+.portrait__tab:hover {
     background-color: #666;
     color: #eee;
 }
 
 .portrait__bio {
+    --width: 108px;
+    --ratio: calc(120px / var(--width));
     position: relative;
-    width: 95px;
-    height: 120px;
+    width: var(--width);
+    height: calc(var(--ratio) * var(--width));
     background-color: #fff;
     border: var(--border-width) var(--border-style) var(--border-color);
 }
 
 .portrait__bio::after {
-    content: url('../img/icon-candy.png');
+    content: "";
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: 14px;
+    background-image: url('../img/icon-candy.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    display: block;
     transition: all 0.5s ease-in-out;
     transform: scale(0);
     opacity: 0;
@@ -390,16 +446,13 @@ body {
 }
 
 .portrait__foot {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-right: -25px;
-    height: 50%;
-    margin-bottom: -25px;
+    margin-right: calc(var(--padding) * -1);
 }
 
-.tag-color, .tag-name {
+.tag-color, .tag-colorName {
     background-color: #fff;
     border: var(--border-width) var(--border-style) var(--border-color);
     border-right-width: 0;
@@ -410,16 +463,21 @@ body {
     font-size: 3rem;
 }
 
-.tag-name {
+.tag-colorName {
     font-size: 1.25rem;
     letter-spacing: 7px;
     margin-top: -1px;
 }
 
+.additional {
+    position: relative;
+    bottom: 0;
+    left: var(--padding);
+}
+
 .tag-arrow {
     position: absolute;
     bottom: 0;
-    left: 0;
     padding: 20px 15px;
     font-size: 2rem;
     border: var(--border-width) var(--border-style) var(--border-color);
@@ -429,21 +487,26 @@ body {
 }
 
 .instagram {
+    position: relative;
     font-family: 'Zapfino';
     font-size: 3rem;
-    top: 40px;
+    left: 50%;
+    top: 50%;
     width: 100%;
     text-align: left;
     line-height: 2;
+    transform: translateX(-50%);
     transition: transform 0.5s ease-in-out;
-    padding-top: 20px;
-    padding-left: 50px;
 }
-.instagram__foot {
-    padding-left: 120px;
+
+.instagram::after {
+    content: '@betty0826cc';
+    display: block;
+    position: relative;
+    left: 150px;
+
 }
+
 .instagram:hover {
-    /* font-size: 2rem; */
-    transform: scale(1.2);
-    /* line-height: 1.75; */
+    transform: scale(1.2) translateX(-30%);
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/mobile.css">
     <title> Betty Lin's world</title>
     <link rel="shortcut icon" href="./img/icon-candy.png">
     <script defer type="module" src="./index.js"></script>
@@ -18,21 +19,31 @@
         </div>
       </div>
     </div>
-    <div class="main flex">
+    <main class="main flex">
       <div class="main__left leftSidebar">
         <!-- 左邊 -->
         <div class="leftSidebar__head banner">
             <canvas class="banner__main canvas circle" id="Canvas" width="400" height="250"></canvas>
+            <div class="sticker circle"></div>
         </div>
         <div class="leftSidebar__body">
           <ul class="leftSidebar__list menu" id="Profile"></ul>
         </div>
         <div class="leftSidebar__foot">
             <div class="graphContainer">
+              <!-- TODO: change content  -->
                 <div class="graph">
                     <div class="graph__container">
                         <div class="graph__path circle"></div>
                         <div class="graph__path circle"></div>
+                        <img class="graph__content" src="./img/emoticon-happiness.png" alt="emoji">
+                    </div>
+                </div>
+                <div class="graph">
+                    <div class="graph__container">
+                        <div class="graph__path circle"></div>
+                        <div class="graph__path circle"></div>
+                        <img class="graph__content" src="./img/emoticon-happiness.png" alt="emoji">
                     </div>
                 </div>
             </div>
@@ -42,27 +53,26 @@
         <div class="rightSidebar__head portrait">
           <!-- 右邊頭部 -->
           <div class="portrait__head">
-            <ul class="portrait__toolbar">
-                <li class="portrait__tool">ABOUT ME</li>
-                <li class="portrait__tool">IllUSTRATOR</li>
-                <li class="portrait__tool">BRAND IDENTITY</li>
-                <li class="portrait__tool">PROJECT DESIGN</li>
-                <li class="portrait__tool">未命名-5.ai*@</li>
+            <ul class="portrait__tabs">
+                <li class="portrait__tab portrait__tab--active">ABOUT ME</li>
+                <li class="portrait__tab">IllUSTRATOR</li>
+                <li class="portrait__tab">BRAND IDENTITY</li>
+                <li class="portrait__tab">PROJECT DESIGN</li>
+                <li class="portrait__tab">未命名-5.ai*@</li>
             </ul>
             <figure class="portrait__bio">
-                <!-- <img src="" alt="" class="portrait__img"> -->
+                <img src="./img/ID photo.png" alt="myself" class="portrait__img">
             </figure>
           </div>
           <div class="portrait__foot">
             <div class="tag-color">#62ffd5</div>
-            <div class="tag-name">這個顏色叫做口水綠</div>
+            <div class="tag-colorName">這個顏色叫做口水綠</div>
+          </div>
+          <div class="addtional">
             <div class="tag-arrow">&horbar;&horbar;&#8250;</div>
-            <div class="tag-instagram instagram">
+            <div class="instagram">
                 <div class="instagram__head">
                     instagram
-                </div>
-                <div class="instagram__foot">
-                    @betty0826cc
                 </div>
             </div>
           </div>
@@ -74,6 +84,6 @@
       <div class="personality circle">
         ENFP
       </div>
-    </div>
+    </m>
   </body>
 </html>

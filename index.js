@@ -38,7 +38,14 @@ function getFormatSubmenu(list = []) {
                 class="submenu__content ${prefix && prefix.content ? 'hasPrefix' : ''}"
                 style="--font-pre: '${prefix.fontFamily || ''}'; --prefix: '${prefix.content || ''}';"
               >
-                ${main.content}${suffix}
+                <p class="submenu__content--wrapper">
+                   <span class="submenu__content--main">
+                    ${main.content}
+                  </span>
+                   <span class="submenu__content--suffix">
+                    ${suffix}
+                  </span>
+                </p>
               </div>
             </li>
           ${href ? `</a>` : ''}
