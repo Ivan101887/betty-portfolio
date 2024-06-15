@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title> Betty Lin's world</title>
+    <link rel="shortcut icon" href="./img/icon-candy.png">
+    <script defer type="module" src="./index.js"></script>
+    <script defer src="./canvas.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="marquee">
+        <div class="marquee-inner">
+          <span class="marquee-body" id="MarqueeContent" style="--speed:3;"></span>
+        </div>
+      </div>
+    </div>
+    <div class="main flex">
+      <div class="main__left leftSidebar">
+        <!-- 左邊 -->
+        <div class="leftSidebar__head banner">
+            <canvas class="banner__main canvas circle" id="Canvas" width="400" height="250"></canvas>
+        </div>
+        <div class="leftSidebar__body">
+          <ul class="leftSidebar__list menu" id="Profile"></ul>
+        </div>
+        <div class="leftSidebar__foot">
+            <div class="graphContainer">
+                <div class="graph">
+                    <div class="graph__container">
+                        <div class="graph__path circle"></div>
+                        <div class="graph__path circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="main__right rightSidebar">
+        <div class="rightSidebar__head portrait">
+          <!-- 右邊頭部 -->
+          <div class="portrait__head">
+            <ul class="portrait__toolbar">
+                <li class="portrait__tool">ABOUT ME</li>
+                <li class="portrait__tool">IllUSTRATOR</li>
+                <li class="portrait__tool">BRAND IDENTITY</li>
+                <li class="portrait__tool">PROJECT DESIGN</li>
+                <li class="portrait__tool">未命名-5.ai*@</li>
+            </ul>
+            <figure class="portrait__bio">
+                <!-- <img src="" alt="" class="portrait__img"> -->
+            </figure>
+          </div>
+          <div class="portrait__foot">
+            <div class="tag-color">#62ffd5</div>
+            <div class="tag-name">這個顏色叫做口水綠</div>
+            <div class="tag-arrow">&horbar;&horbar;&#8250;</div>
+            <div class="tag-instagram instagram">
+                <div class="instagram__head">
+                    instagram
+                </div>
+                <div class="instagram__foot">
+                    @betty0826cc
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="rightSidebar__foot">
+            linyisyuan0826@gmail.com
+        </div>
+      </div>
+      <div class="personality circle">
+        ENFP
+      </div>
+    </div>
+  </body>
+</html>
