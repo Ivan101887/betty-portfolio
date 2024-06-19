@@ -43,7 +43,7 @@
 }
 
 :root {
-    --border-width: 1.5px;
+    --border-width: 2px;
     --border-style: solid;
     --border-color: #000;
 }
@@ -69,10 +69,9 @@ body {
     width: 100%;
     background-color: #afff97;
     color: #11180f;
-    letter-spacing: 5px;
     overflow: hidden;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .main__left,
@@ -90,17 +89,19 @@ body {
 }
 
 .leftSidebar__head {
-  height: 400px;
-  width: 100%;
-  background-image: url('../img/betty.png');
-  background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: 100% auto;
-  background-color: #fff;
-  transition: all .5s ease-in-out;
+    height: 400px;
+    width: 100%;
+    background-image: url('../img/betty.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100% auto;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
 }
+
 .leftSidebar__head:hover {
     background-color: #e6e6e6;
+
     .banner__main {
         background-color: #fff;
     }
@@ -142,7 +143,7 @@ body {
 
 .leftSidebar__listItem {
     --padding: 15px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: var(--padding);
     background-color: #ffffff;
     overflow: hidden;
@@ -150,7 +151,7 @@ body {
     justify-content: space-between;
 }
 
-.leftSidebar__listItem:after {
+.hasArrow::after {
     content: ' \21C0';
     position: relative;
     z-index: 2;
@@ -161,7 +162,7 @@ body {
 
 .leftSidebar__listItem--title {
     position: relative;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-family: 'GenWanMin-L';
 
     h2 {
@@ -188,22 +189,9 @@ body {
     --speed: 0.9;
 }
 
+
 .leftSidebar__listItem--title:hover::before {
     transform: translateY(0);
-}
-
-.banner {
-    text-align: center;
-    align-content: center;
-}
-
-.banner__main {
-    width: 400px;
-    height: 250px;
-    border-radius: 50%;
-    border: var(--border-width) var(--border-style) var(--border-color);
-    background-color: #fff;
-    cursor: url('../img/icon-brush.png'), auto;
 }
 
 .menu__title,
@@ -215,25 +203,29 @@ body {
     transform: translateY(calc(50% + calc(var(--padding) / 2)));
     --speed: 1;
 }
-
 .rightSidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100vh;
 }
 
 .rightSidebar__head {
-    height: 85%;
+    height: 83%;
     background-color: #62ffd5;
 }
 
 .rightSidebar__foot {
-  font-family: 'FontsFree-Net-Dream-Avenue';
-  height: 15%;
-  background-color: #fff;
-  font-size: 2.5rem;
-  padding: 15px;
+    font-family: 'FontsFree-Net-Dream-Avenue';
+    background-color: #fff;
+    flex-grow: 1;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-content: center;
 }
 
 @keyframes marquee {
@@ -250,6 +242,7 @@ body {
     font-family: 'BpmfGenSenRounded-M';
     user-select: none;
     padding-top: 6px;
+    letter-spacing: 5px;
     padding-bottom: 6px;
 }
 
@@ -306,18 +299,34 @@ body {
 
 .graph {
     width: fit-content;
-    max-width: 100%;
     padding: 20px;
-    background-color: #e6e6e6;
     border-left: var(--border-width) var(--border-style) var(--border-color);
+}
+
+.graph:first-of-type {
+    width: 242px;
+    flex-shrink: 1;
+    background-color: #28ffc6;
+}
+
+.graph:last-of-type {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 242px);
+    background-color: #e6e6e6;
 }
 
 .graph__container {
     position: relative;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    width: 300px;
-    max-width: 100%;
+    height: 140px;
+}
+
+.graph__container--sm {
+    box-sizing: border-box;
+}
+
+.graph__container--lg {
+    width: 90%;
 }
 .graph__content {
     position: absolute;
@@ -329,24 +338,35 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.graph__img {
+    width: 100%;
+    height: auto;
+}
+
 .graph__path {
     position: absolute;
     top: 0;
     border: var(--border-width) var(--border-style) var(--border-color);
-    height: 90px;
+    height: 110px;
     width: 100%;
 }
-.graph__path + .graph__path {
+
+.graph__path+.graph__path {
     top: 20%;
 }
 
-.submenu__link {
+.link {
     display: block;
     text-decoration: none;
     font-style: normal;
+    color: unset;
+}
+.link:visited {
+    color: unset;
 }
 
 .submenu__content {
+    /* 內容全部字體：好好生活展覽 */
     position: relative;
     display: flex;
     gap: 25px;
@@ -360,11 +380,13 @@ body {
 }
 
 .submenu__content--main {
-    font-size: 1em;
+    /* 中文字體： */
+    font-size: 1rem;
 }
 
 .submenu__content--suffix {
-    font-size: 0.75em;
+    /* 英文字體 */
+    font-size: .9rem;
 }
 
 .submenu__item {
@@ -373,10 +395,12 @@ body {
 }
 
 .hasPrefix::before {
+    /* (EXHIBITION) */
     content: var(--prefix);
     display: block;
-    font-family: var(--font-pre);
-    font-size: 0.75em;
+    width: 120px;
+    font-family: 'Courier New';
+    font-size: .75rem;
 }
 
 .submenu__content::after {
@@ -388,7 +412,8 @@ body {
     height: 15px;
     box-sizing: border-box;
     transition: width 1s ease-in-out;
-    background-color: #0cffbe;
+    background-color: #28ffc6;
+    z-index: 1;
 }
 
 .submenu__item:hover .submenu__content::after {
@@ -396,15 +421,15 @@ body {
 }
 
 .personality {
-    padding: 15px;
+    padding: .3em;
     background-color: #fff;
     border: var(--border-width) var(--border-style) var(--border-color);
     position: absolute;
-    top: 7vh;
+    top: 300px;
     left: 40%;
     line-height: 1.25em;
     font-size: 3rem;
-    font-family:  'VigranMaroll-2OzWK';
+    font-family: 'VigranMaroll-2OzWK';
     transform: translateX(-50%);
 }
 
@@ -492,6 +517,7 @@ body {
 }
 
 .portrait__foot {
+    /* 色碼,說明：字體 */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -500,6 +526,7 @@ body {
 
 .tag-color,
 .tag-colorName {
+    /* 色碼,說明：字體 */
     background-color: #fff;
     border: var(--border-width) var(--border-style) var(--border-color);
     border-right-width: 0;
@@ -508,13 +535,23 @@ body {
 }
 
 .tag-color {
-    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 色碼 */
+    font-family: "Italianno", cursive;
+    font-size: 3.5rem;
 }
 
 .tag-colorName {
+    /* 說明 */
     font-size: 1.25rem;
     letter-spacing: 7px;
     margin-top: -1px;
+}
+
+.wide {
+    letter-spacing: 4px;
 }
 
 .additional {
@@ -535,16 +572,16 @@ body {
 }
 
 .instagram {
+    position: relative;
     font-family: 'Zapfino';
     font-size: 3rem;
-    top: 10%;
+    left: 50%;
     width: 100%;
     text-align: left;
     line-height: 2;
+    pointer-events: fill;
+    transform: translate(-50%, -20%);
     transition: transform 0.5s ease-in-out;
-    /* padding-top: 20px; */
-    padding-left: 150px;
-    /* padding-bottom: 300px; */
 }
 
 .instagram::after {
@@ -556,7 +593,6 @@ body {
 }
 
 .instagram:hover {
-    /* font-size: 2rem; */
-    transform: scale(1.2);
-    /* line-height: 1.75; */
+    transform: scale(1.2) translateX(-30%);
+
 }

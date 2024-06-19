@@ -14,58 +14,49 @@ export const leftSidebar = {
   infoList: [
     {
       title: 'about',
+      href: '',
       submenu: [
         {
           prefix: '(EXHIBITION)',
           main: '好好生活展覽',
           suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
+          href: 'https://www.instagram.com/ntua2f/'
         },
         {
           prefix: '(EXHIBITION)',
-          main: '好好生活展覽',
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
+          main: '失敗者的飛翔',
+          suffix: 'It,s ok to fail',
+          href: 'https://www.instagram.com/p/Cxr1_zASAb1/?img_index=1'
+        },
+        {
+          prefix: '(WORK)',
+          main: '是一名是一名兒美老師',
+          suffix: 'Teaching exprience',
+          href: 'https://www.instagram.com/stories/highlights/18014977279903787/'
+        },
+        {
+          prefix: '(WORK)',
+          main: '攝癮',
+          suffix: 'Photography',
+          href: 'https://www.instagram.com/photobetty123/'
         },
         {
           prefix: '(EXHIBITION)',
-          main: '好好生活展覽',
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: '(EXHIBITION)',
-          main: '好好生活展覽',
-          suffix: 'Hao Hao Sheng Huo',
+          main: '',
+          suffix: 'It,s ok to fail',
           href: 'javascript:;'
         },
       ]
     },
     {
-      title: 'about',
+      title: 'Behance',
+      href: 'https://www.instagram.com/ntua2f/',
       submenu: [
         {
+
           prefix: '(EXHIBITION)',
-          main: '好好生活展覽',
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: '(EXHIBITION)',
-          main: '好好生活展覽',
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: '(EXHIBITION)',
-          main: '好好生活展覽',
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: '(EXHIBITION)',
-          main: '好好生活展覽',
-          suffix: 'Hao Hao Sheng Huo',
+          main: '',
+          suffix: 'It,s ok to fail',
           href: 'javascript:;'
         },
       ]

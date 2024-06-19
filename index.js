@@ -12,14 +12,16 @@ function fillMarquee() {
 
 function getFormatMenu() {
   const { infoList = [] } = leftSidebar;
-  return infoList.reduce((acc, { title, submenu }) => {
+  return infoList.reduce((acc, { title, submenu, href }) => {
     const string = title
       ? `
-        <li class="leftSidebar__listItem leftSidebar__listItem--title">
-            <h2 class="menu__title">
-                ${title}
-            </h2>
-        </li>
+        ${href ? `<a class="link" href="${href}" target='_blank'>` : ''}
+          <li class="leftSidebar__listItem leftSidebar__listItem--title${href ? ' hasArrow' : ''}">
+              <h2 class="menu__title">
+                  ${title}
+              </h2>
+          </li>
+        ${href ? '<a/>' : ''}
         ${getFormatSubmenu(submenu)}
       `
       : '';
@@ -32,8 +34,8 @@ function getFormatSubmenu(list = []) {
     const str = main ? `
       <li class="leftSidebar__submenu">
         <ul class="submenu">
-          ${href ? `<a class="submenu__link" href="${href}" target='_blank'>` : ''}
-            <li class="submenu__item leftSidebar__listItem">
+          ${href ? `<a class="link" href="${href}" target='_blank'>` : ''}
+            <li class="submenu__item leftSidebar__listItem${href ? ' hasArrow' : ''}">
               <div
                 class="submenu__content ${prefix ? 'hasPrefix' : ''}"
                 style="--prefix: '${prefix}';"
