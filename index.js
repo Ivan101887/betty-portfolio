@@ -35,14 +35,14 @@ function getFormatSubmenu(list = []) {
           ${href ? `<a class="submenu__link" href="${href}" target='_blank'>` : ''}
             <li class="submenu__item leftSidebar__listItem">
               <div
-                class="submenu__content ${prefix && prefix.content ? 'hasPrefix' : ''}"
-                style="--font-pre: '${prefix.fontFamily || ''}'; --prefix: '${prefix.content || ''}';"
+                class="submenu__content ${prefix ? 'hasPrefix' : ''}"
+                style="--prefix: '${prefix}';"
               >
                 <p class="submenu__content--wrapper">
-                   <span class="submenu__content--main">
-                    ${main.content}
+                  <span class="submenu__content--main">
+                    ${main}
                   </span>
-                   <span class="submenu__content--suffix">
+                  <span class="submenu__content--suffix">
                     ${suffix}
                   </span>
                 </p>

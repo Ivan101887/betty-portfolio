@@ -26,8 +26,8 @@ canvas.addEventListener(downEvent, function (e) {
   // 根據事件類型取得座標
   x1 = e.offsetX;
   y1 = e.offsetY;
-
-  ctx.lineWidth = 4;
+  // 比刷大小
+  ctx.lineWidth = 6;
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
 });

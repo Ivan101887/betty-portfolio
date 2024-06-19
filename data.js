@@ -1,5 +1,5 @@
 export const header = {
-  marquee: '這裡是跑馬燈喔!! 隨時可以暫停~快點來動動滑鼠試試看吧!!!!!! Have fun!!這裡是跑馬燈喔!! 隨時可以暫停~快點來動動滑鼠試試看吧!!!!!! Have fun!!',
+  marquee: '我是林奕瑄 IM LIN-YI-SYUAN | Watashi wa Hayashi Yoshimi nokidesu| HELLO 很高興與你相見｜こんにちは、初めまして',
 };
 
 export const leftSidebar = {
@@ -16,74 +16,26 @@ export const leftSidebar = {
       title: 'about',
       submenu: [
         {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
+          prefix: '(EXHIBITION)',
+          main: '好好生活展覽',
           suffix: 'Hao Hao Sheng Huo',
           href: 'javascript:;'
         },
         {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
+          prefix: '(EXHIBITION)',
+          main: '好好生活展覽',
           suffix: 'Hao Hao Sheng Huo',
           href: 'javascript:;'
         },
         {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
+          prefix: '(EXHIBITION)',
+          main: '好好生活展覽',
           suffix: 'Hao Hao Sheng Huo',
           href: 'javascript:;'
         },
         {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
+          prefix: '(EXHIBITION)',
+          main: '好好生活展覽',
           suffix: 'Hao Hao Sheng Huo',
           href: 'javascript:;'
         },
@@ -93,382 +45,26 @@ export const leftSidebar = {
       title: 'about',
       submenu: [
         {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
+          prefix: '(EXHIBITION)',
+          main: '好好生活展覽',
           suffix: 'Hao Hao Sheng Huo',
           href: 'javascript:;'
         },
         {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
+          prefix: '(EXHIBITION)',
+          main: '好好生活展覽',
           suffix: 'Hao Hao Sheng Huo',
           href: 'javascript:;'
         },
         {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
+          prefix: '(EXHIBITION)',
+          main: '好好生活展覽',
           suffix: 'Hao Hao Sheng Huo',
           href: 'javascript:;'
         },
         {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-      ]
-    },
-    {
-      title: 'about',
-      submenu: [
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-      ]
-    },
-    {
-      title: 'about',
-      submenu: [
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-      ]
-    },
-    {
-      title: 'about',
-      submenu: [
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-      ]
-    },
-    {
-      title: 'about',
-      submenu: [
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
-          suffix: 'Hao Hao Sheng Huo',
-          href: 'javascript:;'
-        },
-        {
-          prefix: {
-            content: '(EXHIBITION)',
-            fontFamily: '',
-          },
-          main: {
-            content: '好好生活展覽',
-            fontFamily: '',
-          },
+          prefix: '(EXHIBITION)',
+          main: '好好生活展覽',
           suffix: 'Hao Hao Sheng Huo',
           href: 'javascript:;'
         },
